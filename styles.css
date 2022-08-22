@@ -1,7 +1,35 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.aboutMe{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    background-color: blue;
+    /* background-color: blue; */
+    padding: 3%;
+}
+
+h1{
+    margin: 0;
+}
+.photo img{
+    /* border-radius: 50%; */
+    max-width: 300px;
+}
+.bestContact{
+    display: inline;
+}
+.bestContact__descrip{
+    color: grey;
+}
+
+.information{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 @media (max-width: 1200px){
     .container{
@@ -17,17 +45,11 @@
     .container{
         width: 100%;
     }
+    .information{
+        display: block;
+        grid-template-columns: none;
+    }
     .photo img{
-        width: 150px;
+        width: 200px;
     }
-    }
-
-.photo img{
-    border-radius: 50%;
-    max-width: 300px;
-}
-.aboutMe{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 20px;
 }
